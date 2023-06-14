@@ -1,0 +1,95 @@
+
+
+@keyframes animate{
+  0%,100%{
+    background-image: url("peakpx2.jpeg");
+  }
+  25%{
+    background-image: url("peakpx1.jpeg");
+  }
+  50%{
+    background-image: url("peakpx3.jpeg");
+  }
+
+}
+body{
+  animation: animate 30s ease-in-out infinite;
+  background-size: 100%;
+  background-attachment: fixed;
+  position:absolute;
+  top:0;
+}
+.card-title1{
+  color: black;
+}
+.card-text{
+  color: black;
+}
+.dim{
+  width: 100%;
+  height: 100vh;
+  
+}
+
+.card-body, .card {
+  height: 100%;
+}
+
+table {
+  border: transparent;
+  text-align: center;
+}
+
+th, td {
+  padding: 2%;
+}
+.container{
+  padding:100px 100px;
+}
+.card-title{
+  font-weight: bold;
+  color: whitesmoke;
+  margin-top: 50px;
+}
+.navbar{
+  width:100%;
+  display:flex;
+  align-items: center;
+  margin: 35px auto;
+}
+.dataframe {
+  color: whitesmoke !important;
+  border: 1px;
+}
+.logo{
+  flex-basis:15%;
+  font-size: xx-large;
+}
+.menu-icon{
+  flex:1;
+  align-items: center;
+  text-align:right;
+  float: right;
+}
+.menu-icon a{
+  color: white;
+  padding:7px 13px;
+  
+}
+
+.menu-icon  a:hover{
+  background-color: black;
+  color:white;
+}
+.card {
+  opacity: 75%;
+
+  border-radius: 10%;
+  margin-right:150px;
+  margin-bottom: 10px;
+}
+
+.card :hover {
+  opacity: 100%;
+ 
+}

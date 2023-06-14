@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/custom.css">
+    <title>Analysis</title>
+  </head>
+  <body style="width: 100%; padding: 0 10%;">
+    <div class="dim">
+    <nav class="navbar">
+      <div class="logo">
+        <label style="color:white;"><b>Youtuber</b></label>
+      </div>
+      <div class="menu-icon">
+        <a href="home.html"><b>Home</b></a></li>
+        
+        <a href="about.html"><b>About</b></a></li>
+      </div>
+    </nav>
+    <div class="container-xl">
+      <p></p>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <div>
+
+                <h5 class="card-title1">Compare Channels</h5>
+                <p class="card-text">List the channels </p>
+
+                <form class="" action="/select_channels">
+                  <p><input type="text" name="channel_id_1"></p>
+                  <p><input type="text" name="channel_id_2"></p>
+                  <p><input type="text" name="channel_id_3"></p>
+                  <button name="button" class="btn btn-primary">Search Channels </button>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <div class="test">
+
+                <h5 class="card-title1">Analyse Video Comments</h5>
+                <p class="card-text">Enter the video name </p>
+
+                <form class="" action="/select_video">
+                  <p><input type="text" name="query"></p>
+                  <button class="btn btn-primary">Search Video</button>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% block content %}{% endblock %}
+
+    </div>
+    </div>
+  </body>
+</html>
